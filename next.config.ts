@@ -1,11 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "export",
-  basePath: "/paperclip-revenue-app",
-  images: {
-    unoptimized: true,
-  },
+  // Removed output: "export" - we need API routes for auth, AI, and payments
+  // Removed basePath - deploying to Vercel root
 };
 
 export default nextConfig;
